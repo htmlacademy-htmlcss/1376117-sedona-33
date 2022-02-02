@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -46,7 +47,8 @@
       </nav>
     </header>
     <main class="main-inner">
-     <header class="inner-header">
+     <div class="catalog-header">
+       <header class="inner-header">
        <h1 class="inner-header-title">Гостиницы Седоны</h1>
        <ul class="breadcrumbs">
          <li class="breadcrumbs-item">
@@ -116,6 +118,7 @@
         <button class="button-reset" type="reset">Сбросить</button>
        </form>
      </section>
+     </div>
      <section class="select">
        <p class="found-pages">Найдено гостиниц: 38</p>
        <select class="select-control" aria-label="Сортировка">
@@ -146,7 +149,10 @@
            <span class="hotel-price">От 4000 ₽</span>
            <a class="button-hotel button-more-details" href="#">Подробнее</a>
            <a class="button-hotel button-favorites" href="#">В избранное</a>
-           <img class="rating-stars" src="images/catalog/stars/four-stars.svg" width="91" height="17" alt="Четыре звезды">
+           <img class="rating-stars" src="images/catalog/star.svg" width="18" height="17" alt="Звезда">
+           <img class="rating-stars" src="images/catalog/star.svg" width="18" height="17" alt="Звезда">
+           <img class="rating-stars" src="images/catalog/star.svg" width="18" height="17" alt="Звезда">
+           <img class="rating-stars" src="images/catalog/star.svg" width="18" height="17" alt="Звезда">
            <span class="hotel-rating">Рейтинг: 8,5</span>
          </li>
          <li class="catalog-hotels-item">
@@ -158,7 +164,9 @@
           <span class="hotel-price">От 3000 ₽</span>
           <a class="button-hotel button-more-details" href="#">Подробнее</a>
           <a class="button-hotel button-favorites" href="#">В избранное</a>
-          <img class="rating-stars" src="images/catalog/stars/three-stars.svg" width="68" height="17" alt="Три звезды">
+          <img class="rating-stars" src="images/catalog/star.svg" width="18" height="17" alt="Звезда">
+          <img class="rating-stars" src="images/catalog/star.svg" width="18" height="17" alt="Звезда">
+          <img class="rating-stars" src="images/catalog/star.svg" width="18" height="17" alt="Звезда">
           <span class="hotel-rating">Рейтинг: 8,9</span>
         </li>
         <li class="catalog-hotels-item">
@@ -170,7 +178,8 @@
           <span class="hotel-price">От 2000 ₽</span>
           <a class="button-hotel button-more-details" href="#">Подробнее</a>
           <a class="button-hotel button-favorites-chosen" href="#">В избранном</a>
-          <img class="rating-stars" src="images/catalog/stars/two-stars.svg" width="43" height="17" alt="Две звезды">
+          <img class="rating-stars" src="images/catalog/star.svg" width="18" height="17" alt="Звезда">
+          <img class="rating-stars" src="images/catalog/star.svg" width="18" height="17" alt="Звезда">
           <span class="hotel-rating">Рейтинг: 9,2</span>
         </li>
         <li class="catalog-hotels-item">
@@ -181,8 +190,9 @@
           <p class="type-housing">Гостиница</p>
           <span class="hotel-price">От 3000 ₽</span>
           <a class="button-hotel button-more-details" href="#">Подробнее</a>
-          <a class="button-hotel button-favorites" href="#">В избранном</a>
-          <img class="rating-stars" src="images/catalog/stars/two-stars.svg" width="43" height="17" alt="Две звезды">
+          <a class="button-hotel button-favorites" href="#">В избранное</a>
+          <img class="rating-stars" src="images/catalog/star.svg" width="18" height="17" alt="Звезда">
+          <img class="rating-stars" src="images/catalog/star.svg" width="18" height="17" alt="Звезда">
           <span class="hotel-rating">Рейтинг: 9,2</span>
         </li>
       </ul>
@@ -222,11 +232,12 @@
     <footer class="page-footer">
       <section class="newletter newletter-inner">
         <h2 class="visually-hidden">Рассылка</h2>
-        <h3 class="newletter subscription">Подпишитесь на рассылку</h3>
-        <p class="newletter-description">Только полезная информация и никакого спама честное бойскаутское!</p>
+        <h3 class="newletter subscription-inner">Подпишитесь на рассылку</h3>
+        <p class="newletter-description-inner">Только полезная информация и никакого спама честное бойскаутское!</p>
         <form class="newletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label for="new-email">Email</label>
+          <label for="new-email">
           <input class="field" type="email" name="new-email" id="new-email" placeholder="Ваш e-mail" required>
+          </label>
           <button class="newletter-button" type="submit">Подписаться</button>
         </form>
       </section>

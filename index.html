@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -22,7 +23,7 @@
           </li>
         </ul>
         <ul class="navigation-link navigation-icons">
-          <li class="navigation-item">
+          <li class="navigation-item menu-user">
             <a class="navigation-link" href="#">
               <img class="navigation-icon" src="images/header/search.svg" width="18" height="18" alt="Поиск">
               <span class="visully-hidden">
@@ -30,7 +31,7 @@
               </span>
             </a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item menu-user">
             <a class="navigation-link" href="#">
               <img class="navigation-icon" src="images/header/favorite.svg" width="18" height="17" alt="Избранное">
               <span class="visually-hidden">
@@ -40,16 +41,21 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Хочу сюда!</a>
+            <a class="navigation-link button-want" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="main-index">
+      <div>
       <h1 class="visually-hidden">Седона</h1>
       <img class="logo" src="images/index/welcome.svg" width="458" height="352" alt="Welcom to Sedona">
-      <p>Седона — небольшой городок в Аризоне,заслуживающий большего!</p>
-      <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+      </div>
+      <div class="divider"></div>
+      <div class="description">
+         <p class="definition">Седона — небольшой городок в Аризоне,заслуживающий большего!</p>
+         <p class="cause">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+      </div>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantages-list">
@@ -61,14 +67,14 @@
           <li class="advantages-item">
             <img class="photo-one" src="images/index/photo-city-of-sedona.jpg" width="800" height="384" alt="Фото городка Седона">
           </li>
-          <li class="advantages-item ">
+          <li class="advantages-item">
             <img class="icon-house" src="images/index/icon-house.svg" width="75" height="72" alt="Иконка в виде дома">
             <h3 class="advantages-title">Жильё</h3>
             <p class="number">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
-          <li class="advantages-item">
+          <li class="advantages-item food">
             <img class="icon-house" src="images/index/icon-burger.svg" width="74" height="70" alt="Иконка в виде бургера">
-            <h3 class="advantages-title food">Еда</h3>
+            <h3 class="advantages-title">Еда</h3>
             <p class="number">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class="advantages-item">
@@ -110,7 +116,7 @@
       </section>
     </main>
       <footer class="page-footer">
-        <section class="newletter">
+        <section class="newletter newletter-index">
           <h2 class="visually-hidden">Рассылка</h2>
           <h3 class="newletter subscription">Подпишитесь на рассылку</h3>
           <p class="newletter-description">Только полезная информация и никакого спама честное бойскаутское!</p>
