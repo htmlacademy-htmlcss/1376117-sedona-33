@@ -64,12 +64,21 @@ body {
   background-color: #756257;
 }
 
-.main-index {
+.logotype {
   color: #000000;
-  background-color: #ffffff;
-  background-image: url("../images/index/index-background.jpg");
+  background-color: #413d3d;
+  background: url("../images/index/index-background.jpg") no-repeat;
+  background-size: cover;
+}
 
-  background-repeat: no-repeat;
+ .logotype::after {
+   content: "";
+   height: 57px;
+   width: 100%;
+   display: block;
+   background-image: url("../images/index/divider.svg");
+   background-repeat: no-repeat;
+   background-size: 100% auto;
 }
 
 .description {
@@ -153,13 +162,15 @@ body {
   font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .newletter-index {
   color: #ffffff;
+  background-color: #000000;
   background-image: url("../images/index/background.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
-  background-color: #6b5e5e;
   text-align: center;
 }
 
@@ -167,7 +178,6 @@ body {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
-  text-align: center;
   text-transform: uppercase;
 }
 
@@ -175,12 +185,12 @@ body {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-  text-align: center;
 }
 
 .newletter-button {
   color: #ffffff;
   background-color: #83b3d3;
+  font-family: inherit;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
@@ -195,13 +205,36 @@ body {
   line-height: 40px;
   text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .catalog-header {
   background-image: url("../images/catalog/catalog-background.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
   color: #ffffff;
-  background-color: #6b5e5e;
+  background-color: #000000;
+}
+
+.button-apply {
+  color:#ffffff;
+  background-color: #83b3d3;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.button-reset {
+  color: #ffffff;
+  background-color: transparent;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
 }
 
 .found-pages {
@@ -235,6 +268,7 @@ body {
 }
 
 .button-hotel {
+  color: #ffffff;
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
@@ -243,13 +277,13 @@ body {
 }
 
 .button-more-details {
-  color: #ffffff;
   background-color: #756257;
+  text-decoration: none;
 }
 
 .button-favorites {
-  color: #ffffff;
   background-color: #83B3D3;
+  text-decoration: none;
 }
 
 .hotel-rating {
@@ -264,11 +298,13 @@ body {
 
 .button-favorites-chosen {
   background-color: #7DB54F;
+  text-decoration: none;
 }
 
 .button-show-more {
   color: #ffffff;
   background-color: #83b3d3;
+  font-family: inherit;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
@@ -325,12 +361,4 @@ body {
   text-align: center;
 }
 
-.newletter-button {
-  color: #ffffff;
-  background-color: #83b3d3;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 26px;
-  text-align: center;
-  text-transform: uppercase;
-}
+

@@ -47,11 +47,12 @@
       </nav>
     </header>
     <main class="main-index">
-      <div>
-      <h1 class="visually-hidden">Седона</h1>
-      <img class="logo" src="images/index/welcome.svg" width="458" height="352" alt="Welcom to Sedona">
+      <div class="logotype">
+       <h1 class="visually-hidden">Седона</h1>
+       <img class="logo" src="images/index/welcome.svg" width="458" height="352" alt="Welcom to Sedona">
+       <!--<img class="divider" src="images/index/divider.svg" width="1200" height="57" alt="Декоративное украшение">-->
       </div>
-      <div class="divider"></div>
+
       <div class="description">
          <p class="definition">Седона — небольшой городок в Аризоне,заслуживающий большего!</p>
          <p class="cause">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
@@ -121,8 +122,9 @@
           <h3 class="newletter subscription">Подпишитесь на рассылку</h3>
           <p class="newletter-description">Только полезная информация и никакого спама честное бойскаутское!</p>
           <form class="newletter-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label for="newletter-email">Email</label>
-            <input class="field" type="email" name="newletter-email" id="newletter-email" placeholder="Ваш e-mail" required>
+            <label>
+            <input class="field" type="email" name="newletter-email" placeholder="Ваш e-mail" required>
+            </label>
             <button class="newletter-button" type="submit">Подписаться</button>
           </form>
         </section>
