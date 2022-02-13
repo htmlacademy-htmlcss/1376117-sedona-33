@@ -74,7 +74,6 @@ body {
 }
 
 .header-logo {
-  display: block;
   vertical-align: bottom;
 }
 
@@ -101,6 +100,7 @@ body {
   font-weight: 700;
   text-decoration: none;
   color: inherit;
+  position: relative;
 }
 
 .amount-likes {
@@ -109,9 +109,10 @@ body {
   font-weight: 400;
   color: #ffffff;
   background-color: #7db54f;
-  vertical-align: super;
-  font-size: smaller;
-  }
+  position: absolute;
+  top: 17px;
+  right: 10px;
+}
 
 .button-want {
   padding: 9px 15px;
@@ -244,7 +245,6 @@ body {
 
 .photo-one,
 .photo-two {
-  display: block;
   vertical-align: bottom;
 }
 
@@ -480,7 +480,7 @@ body {
   padding: 0;
 }
 
-.group2 {
+.group-types {
   margin-left: 67px;
 }
 
