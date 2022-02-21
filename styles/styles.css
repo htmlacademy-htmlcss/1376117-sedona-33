@@ -578,11 +578,28 @@ body {
 }
 
 .catalog-hotels-list {
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 10px 18px;
   list-style-type: none;
+  padding: 0;
+}
+
+.catalog-hotels-item {
+  display: grid;
+  grid-template-rows: 206px min-content auto 37px 37px;
+  grid-template-columns: 133px 141px;
+  gap: 16px 25px;
+  padding: 20px;
+}
+
+.hotel-image {
+  grid-column: 1/-1;
 }
 
 .hotel-link {
   text-decoration: none;
+  grid-column: 1/-1;
 }
 
 .hotel-title {
@@ -590,6 +607,7 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 31px;
+  margin: 0;
 }
 
 .type-housing,
@@ -598,6 +616,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
+  margin: 0;
 }
 
 .button-hotel {
@@ -607,6 +626,13 @@ body {
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
+  padding-top: 9px;
+  padding-bottom: 10px;
+}
+
+.rating-stars {
+  margin-right: 7px;
+  align-self: center;
 }
 
 .hotel-rating {
@@ -617,6 +643,15 @@ body {
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
+  margin-left: auto;
+  width: 160px;
+  padding-top: 9px;
+  padding-bottom: 10px;
+}
+
+.rating-content {
+  grid-column: 1/-1;
+  display: flex;
 }
 
 .button-show-more {
