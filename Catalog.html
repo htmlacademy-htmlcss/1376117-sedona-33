@@ -77,20 +77,23 @@
                   <ul class="hotels-filter-list">
                     <li class="hotels-filter-item">
                       <label class="control">
-                        <input class="control-input" type="checkbox" name="swimming-pool" checked>
-                         Бассейн
+                        <input class="visually-hidden control-input" type="checkbox" name="swimming-pool" checked>
+                        <span class="control-mark"></span>
+                        <span class="control-label">Бассейн</span>
                       </label>
                     </li>
                     <li class="hotels-filter-item">
                       <label class="control">
-                        <input class="control-input" type="checkbox" name="parking" checked>
-                         Парковка
+                        <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+                        <span class="control-mark"></span>
+                        <span class="control-label">Парковка</span>
                       </label>
                     </li>
                     <li class="hotels-filter-item">
                       <label class="control">
-                        <input class="control-input" type="checkbox" name="wi-fi">
-                         Wi-Fi
+                        <input class="visually-hidden control-input" type="checkbox" name="wi-fi">
+                        <span class="control-mark"></span>
+                        <span class="control-label">Wi-Fi</span>
                       </label>
                     </li>
                  </ul>
@@ -100,26 +103,51 @@
                   <ul class="hotels-filter-list">
                     <li class="hotels-filter-item">
                       <label class="control">
-                        <input class="control-input" type="radio" name="home-group" value="hotel" checked>
-
-                         Гостиница
+                        <input class="visually-hidden control-input" type="radio" name="home-group" value="hotel" checked>
+                        <span class="control-mark"></span>
+                        <span class="control-label">Гостиница</span>
                       </label>
                     </li>
                     <li class="hotels-filter-item">
                       <label class="control">
-                        <input class="control-input" type="radio" name="home-group" value="motel">
-
-                         Мотель
+                        <input class="visually-hidden control-input" type="radio" name="home-group" value="motel">
+                        <span class="control-mark"></span>
+                        <span class="control-label">Мотель</span>
                       </label>
                     </li>
                     <li class="hotels-filter-item">
                       <label class="control">
-                        <input class="control-input" type="radio" name="home-group" value="apartments">
-
-                         Апартаменты
+                        <input class="visually-hidden control-input" type="radio" name="home-group" value="apartments">
+                        <span class="control-mark"></span>
+                        <span class="control-label">Апартаменты</span>
                       </label>
                     </li>
                  </ul>
+                </fieldset>
+                <fieldset class="hotels-filter-group filter-group-price">
+                  <legend class="hotels-filter-title">Стоимость, ₽:</legend>
+                  <div class="range-wrapper-inputs">
+                    <label class="catalog-filter-label">
+                      <input class="range-input input-min-price" type="number" value="0" name="min-price">
+                      <span class="input-price-from">от</span>
+                    </label>
+                    <label class="catalog-filter-label">
+                      <input class="range-input input-max-price" type="number" value="9000" name="max-price">
+                      <span class="input-price-before">до</span>
+                    </label>
+                  </div>
+                   <div class="range">
+                    <div class="range-scale">
+                      <div class="range-bar" style="left: 0; width: 227px">
+                        <button class="range-toggle toggle-min">
+                          <span class="visually-hidden">Изменить минимальную цену.</span>
+                        </button>
+                        <button class="range-toggle toggle-max">
+                          <span class="visually-hidden">Изменить максимальную цену.</span>
+                        </button>
+                      </div>
+                   </div>
+                  </div>
                 </fieldset>
                 <div class="container-filter-button">
                 <button class="button-apply button-blue" type="submit">Применить</button>
@@ -130,12 +158,12 @@
         </div>
         <div class="container-select">
         <section class="select">
-          <p class="found-pages">Найдено гостиниц:38</p>
+          <p class="found-pages">Найдено гостиниц: 38</p>
           <select class="select-control select-field" aria-label="Сортировка">
             <option class=cheap value="cheap">Сначала дешёвые</option>
           </select>
           <div class="container-button-view-type">
-          <a href="#" class="button-view-type mode-tile">
+          <a href="#" class="button-view-type mode-tile button-view-type-current">
             <span class="visually-hidden">Показать карточки</span>
           </a>
           <a href="#" class="button-view-type mode-slideshow">
@@ -227,7 +255,7 @@
           </div>
         </section>
         <div class="container-pagination">
-          <ul class="pagination-list">
+          <ol class="pagination-list">
             <li class="pagination-item">
               <a class="pagination-link pagination-current" href="#">1</a>
             </li>
@@ -246,7 +274,7 @@
             <li class="pagination-item">
               <a class="pagination-link button-blue" href="#">10</a>
             </li>
-          </ul>
+          </ol>
           <div class="container-hotels-amount">
             <p class="hotels-amount">Гостиниц на странице:</p>
             <select class="amount-value select-field" aria-label="Количество">

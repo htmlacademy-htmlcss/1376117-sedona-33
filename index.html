@@ -165,5 +165,43 @@
           </div>
         </section>
       </footer>
+      <div class="modal-container">
+        <div class="modal modal-hotel-search">
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <section class="modal-content">
+            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+            <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+              <p class="field-group">
+                <label class="field-name" for="arrival-field">Дата заезда:</label>
+                <input class="date-field field" type="date" name="arrival-date-field" id="arrival-date">
+              </p>
+              <span class="inform-text">Мы не можем отправить вас в прошлое.</span>
+              <p class="field-group">
+                <label class="field-name" for="arrival-field">Дата выезда:</label>
+                <input class="date-field field" type="date" name="departure-date-field" id="arrival-date">
+              </p>
+              <span class="departure-date-text inform-text">На эти даты есть свободные номера. Пока есть.</span>
+              <div class="container-field-group">
+                <label class="field-name" for="adult-field">Взрослые:</label>
+                <div class="container-number">
+                  <button class="number-minus" type="button"></button>
+                  <input class="adult-field field" type="number" value="0" step="1" name="number-adult" id="adult-field">
+                  <button class="number-plus" type="button"></button>
+                </div>
+                <label class="field-name " for="children-field">Дети:</label>
+                <div class="container-number">
+                  <button class="number-minus children-minus" type="button"></button>
+                  <input class="children-field field " type="number" value="0" step="1" name="number-children" id="children-field">
+                  <button class="number-plus" type="button"></button>
+                </div>
+              </div>
+              <button class="button-blue button-form-search">Найти</button>
+            </form>
+          </section>
+        </div>
+
+      </div>
     </body>
 </html>
