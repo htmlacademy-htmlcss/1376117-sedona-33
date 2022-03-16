@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
@@ -116,9 +117,8 @@
         <h3 class="subscription">Подпишитесь на рассылку</h3>
         <p class="newletter-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
         <form class="newletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label>
-          <input class="field" type="email" name="newletter-email" placeholder="Ваш e-mail" required>
-          </label>
+          <label class="visually-hidden" for="newsletter-email">Email</label>
+          <input class="field" type="email" name="newletter-email" id="newletter-email" placeholder="Ваш e-mail" required>
           <button class="newletter-button button-blue" type="submit">Подписаться</button>
         </form>
        </section>
@@ -202,7 +202,7 @@
                       <svg class="tooltip-icon" aria-hidden="true" focusable="false" width="1" height="9" viewBox="0 0 1 9" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)">
                         <path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z"/></g><defs><clipPath id="a"><path d="M0 0h1v9H0z"/></clipPath></defs></svg>
                     </button>
-                    <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей,<br> которые будут с вами, возраст<br> которых от 6 до 18 лет.
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет.
                        Дети<br> до 6 лет размещаются бесплатно.</span>
                   </span>
                 </span>

@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
@@ -291,9 +292,8 @@
           <h3 class="subscription-inner">Подпишитесь на рассылку</h3>
           <p class="newletter-description-inner">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="newletter-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label>
-              <input class="field" type="email" name="new-email" placeholder="Ваш e-mail" required>
-            </label>
+            <label class="visually-hidden" for="newsletter-email">Email</label>
+            <input class="field" type="email" name="newletter-email" id="newletter-email" placeholder="Ваш e-mail" required>
             <button class="newletter-button button-blue" type="submit">Подписаться</button>
           </form>
         </section>
