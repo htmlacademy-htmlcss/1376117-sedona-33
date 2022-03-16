@@ -1458,7 +1458,7 @@ img {
   background-color: #f2f2f2;
   border-radius: 50%;
   border: none;
-  background-image: url("../images/index/close.svg");
+  background-image: url("../images/index/button-close.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
