@@ -257,6 +257,7 @@ img {
   background: #68a2ca;
   color: #ffffff;
   opacity: 0.3;
+  outline: none;
 }
 
 .button-green {
@@ -1023,6 +1024,10 @@ img {
 
 .button-apply:focus {
   outline: 3px solid #ffffff;
+}
+
+.button-apply:active {
+  outline: none;
 }
 
 .button-reset {
