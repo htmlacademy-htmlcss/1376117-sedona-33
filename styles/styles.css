@@ -255,8 +255,7 @@ img {
 
 .button-blue:active {
   background: #68a2ca;
-  color: #ffffff;
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
   outline: none;
 }
 
@@ -278,8 +277,7 @@ img {
 }
 
 .button-green:active {
-  color: #ffffff;
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
   outline: none;
 }
 
