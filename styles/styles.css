@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: > 2% and last 1 version
+*/
+
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -58,6 +65,11 @@ body {
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .main-container {
@@ -935,7 +947,8 @@ body {
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
@@ -1090,7 +1103,8 @@ body {
 
 .select-field {
   background: url("../images/catalog/select-arrow.svg") no-repeat right 21px center;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
 }
 
 .select-field:hover {
@@ -1538,7 +1552,8 @@ body {
 .adult-field {
   width: 133px;
   height: 50px;
-  appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
   border-radius: 4px;
   background-color: #f2f2f2;
   text-align: center;
@@ -1546,13 +1561,15 @@ body {
 
 .children-field.field::-webkit-outer-spin-button,
 .children-field.field::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
 .adult-field::-webkit-outer-spin-button,
 .adult-field::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
