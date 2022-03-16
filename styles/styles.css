@@ -375,6 +375,7 @@ img {
 .travel-reason {
   margin: 0 75px 79px;
   color: #333333;
+  white-space: pre;
 }
 
 .reason {
